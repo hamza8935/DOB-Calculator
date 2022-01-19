@@ -4,11 +4,22 @@ let min1 = document.getElementById('minutes') ;
 let sec1 = document.getElementById('sec') ;
 let months1 = document.getElementById('months') ;
 let years1 = document.getElementById('years') ;
+let btn = document.getElementById('btn') ;
+let input1 = document.querySelector('.input1')
+console.log(input1);
 
-setInterval(() => {
+btn.addEventListener('click',function ( ) {
     
 
-let date1 = new Date(1997,07,23).getTime();
+setInterval(() => {
+   
+    
+let input2 = input1.value ;
+// if (input2 === '') {
+//     alert('please enter date and time');
+// }
+console.log(input2);
+let date1 = new Date(input2).getTime();
 let todayDate = new Date().getTime() ;
 
 let currDate = todayDate - date1  ;
@@ -20,8 +31,8 @@ var seconds = Math.floor(currDate / 1000) ,
     days    = Math.floor(hours / 24),
     months  = Math.floor(days / 30),
     years   = Math.floor(days / 365);
-    console.log(months);
-    console.log(years);
+    // console.log(months);
+    // console.log(years);
 
 // let days = Math.floor(currDate / (1000 * 60 * 60 * 24));
 // let hours =Math.floor((currDate / (1000*60*60)) % 24);
@@ -39,6 +50,7 @@ years1.innerText = years ;
 // console.log(seconds);
 
 }, 1000);
+})
 // let  years =  Math.floor(currDate * 8760);
 // console.log(years);
 // console.log(date1);
