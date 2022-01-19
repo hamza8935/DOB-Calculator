@@ -1,0 +1,26 @@
+.main{
+    width: 1340px;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.heading{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.heading1{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h2{
+    width: 175px;
+}
+*{
+    color: white;
+}
