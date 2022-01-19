@@ -2,24 +2,26 @@ let days1 = document.getElementById('days') ;
 let hours1 = document.getElementById('hours') ;
 let min1 = document.getElementById('minutes') ;
 let sec1 = document.getElementById('sec') ;
-let months = document.getElementById('months') ;
-let years = document.getElementById('years') ;
+let months1 = document.getElementById('months') ;
+let years1 = document.getElementById('years') ;
 
 setInterval(() => {
     
 
-let date1 = new Date(1998,11,21).getTime();
+let date1 = new Date(1997,07,23).getTime();
 let todayDate = new Date().getTime() ;
 
 let currDate = todayDate - date1  ;
 
-console.log(currDate);
+//console.log(currDate);
 var seconds = Math.floor(currDate / 1000) ,
    minutes = Math.floor(seconds / 60),
     hours   = Math.floor(minutes / 60),
     days    = Math.floor(hours / 24),
     months  = Math.floor(days / 30),
     years   = Math.floor(days / 365);
+    console.log(months);
+    console.log(years);
 
 // let days = Math.floor(currDate / (1000 * 60 * 60 * 24));
 // let hours =Math.floor((currDate / (1000*60*60)) % 24);
@@ -29,12 +31,12 @@ days1.innerText = days ;
 hours1.innerText = hours ;
 min1.innerText = minutes ;
 sec1.innerText = seconds ;
-months.innerText = months ;
-years.innerText = years ;
-console.log(days);
-console.log(hours);
-console.log(minutes);
-console.log(seconds);
+months1.innerText = months ;
+years1.innerText = years ;
+// console.log(days);
+// console.log(hours);
+// console.log(minutes);
+// console.log(seconds);
 
 }, 1000);
 // let  years =  Math.floor(currDate * 8760);
