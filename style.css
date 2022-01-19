@@ -7,19 +7,21 @@
     background-color: black;
 }
 .heading{
-    width: 700px;
+    width: 900px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .heading1{
-    width: 700px;
+    width: 900px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 h2{
-    width: 175px;
+    width: 200px;
+    text-align: center;
+    /* border: 1px solid white; */
 }
 *{
     color: white;
